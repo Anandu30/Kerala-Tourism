@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <section id="signup">
+        <div class="row">
+            <div class="col-lg-12">
+        <div class="box">
+            <div class="row">
+                <div class="col-lg-6 icon">
+                    <h2><img src="./img/Logo.png">Signup</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-floating name">
+                    <input type="name" id="firstname" onkeyup="validatefirstname()" class="form-control text" >
+                    <label for="floatingInput">First Name</label>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-floating name">
+                    <input type="name" id="lastname" onkeyup="validatelastname()" class="form-control text" id="floatingInput" >
+                    <label for="floatingInput">Last Name</label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-floating name">
+                    <input type="email " id="email" onkeyup="validateemail()" class="form-control text" id="floatingInput">
+                    <label for="floatingInput">Email</label>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-floating name">
+                    <input type="name" id="password" onkeyup="validatepassword()" class="form-control text" id="floatingInput" >
+                    <label for="floatingInput">Create Password</label>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-floating name">
+                    <input type="name" id="password1" onkeyup="validatepassword1()" class="form-control text" id="floatingInput">
+                    <label for="floatingInput">Confirm Password</label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-floating name">
+                    <input type="name" id="address" onkeyup="validateaddress()" class="form-control text" id="floatingInput" >
+                    <label for="floatingInput">Address</label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                        <select class="form-select name text" id="country" required>
+                            <option class="drop"+class="drop" value="Afghanistan" selected>Choose your Country</option>
+                            <option class="drop"value="Afghanistan">Afghanistan</option>
+                            <option class="drop"value="Albania">Albania</option>
+                            <option class="drop"class="drop"value="Algeria">Algeria</option>
+                            <option class="drop"value="American Samoa">American Samoa</option>
+                            <option class="drop"value="Andorra">Andorra</option>
+                            <option class="drop"value="Angola">Angola</option>
+                            <option class="drop"value="Anguilla">Anguilla</option>
+                            <option class="drop"value="Antartica">Antarctica</option>
+                            <option class="drop"value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option class="drop"value="Argentina">Argentina</option>
+                            <option class="drop"value="Armenia">Armenia</option>
+                            <option class="drop"value="Aruba">Aruba</option>
+                            <option class="drop"value="Australia">Australia</option>
+                            <option class="drop"value="Austria">Austria</option>
+                            <option class="drop"value="Azerbaijan">Azerbaijan</option>
+                            <option class="drop"value="Bahamas">Bahamas</option>
+                            <option class="drop"value="Bahrain">Bahrain</option>
+                            <option class="drop"value="Bangladesh">Bangladesh</option>
+                            <option class="drop"value="Barbados">Barbados</option>
+                            <option class="drop"value="Belarus">Belarus</option>
+                            <option class="drop"value="Belgium">Belgium</option>
+                            <option class="drop"value="Belize">Belize</option>
+                            <option class="drop"value="Benin">Benin</option>
+                            <option class="drop"value="Bermuda">Bermuda</option>
+                            <option class="drop"value="Bhutan">Bhutan</option>
+                            <option class="drop"value="Bolivia">Bolivia</option>
+                            <option class="drop"value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
+                            <option class="drop"value="Botswana">Botswana</option>
+                            <option class="drop"value="Bouvet Island">Bouvet Island</option>
+                            <option class="drop"value="Brazil">Brazil</option>
+                            <option class="drop"value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option class="drop"value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option class="drop"value="Bulgaria">Bulgaria</option>
+                            <option class="drop"value="Burkina Faso">Burkina Faso</option>
+                            <option class="drop"value="Burundi">Burundi</option>
+                            <option class="drop"value="Cambodia">Cambodia</option>
+                            <option class="drop"value="Cameroon">Cameroon</option>
+                            <option class="drop"value="Canada">Canada</option>
+                            <option class="drop"value="Cape Verde">Cape Verde</option>
+                            <option class="drop"value="Cayman Islands">Cayman Islands</option>
+                            <option class="drop"value="Central African Republic">Central African Republic</option>
+                            <option class="drop"value="Chad">Chad</option>
+                            <option class="drop"value="Chile">Chile</option>
+                            <option class="drop"value="China">China</option>
+                            <option class="drop"value="Christmas Island">Christmas Island</option>
+                            <option class="drop"value="Cocos Islands">Cocos (Keeling) Islands</option>
+                            <option class="drop"value="Colombia">Colombia</option>
+                            <option class="drop"value="Comoros">Comoros</option>
+                            <option class="drop"value="Congo">Congo</option>
+                            <option class="drop"value="Congo">Congo, the Democratic Republic of the</option>
+                            <option class="drop"value="Cook Islands">Cook Islands</option>
+                            <option class="drop"value="Costa Rica">Costa Rica</option>
+                            <option class="drop"value="Cota D'Ivoire">Cote d'Ivoire</option>
+                            <option class="drop"value="Croatia">Croatia (Hrvatska)</option>
+                            <option class="drop"value="Cuba">Cuba</option>
+                            <option class="drop"value="Cyprus">Cyprus</option>
+                            <option class="drop"value="Czech Republic">Czech Republic</option>
+                            <option class="drop"value="Denmark">Denmark</option>
+                            <option class="drop"value="Djibouti">Djibouti</option>
+                            <option class="drop"value="Dominica">Dominica</option>
+                            <option class="drop"value="Dominican Republic">Dominican Republic</option>
+                            <option class="drop"value="East Timor">East Timor</option>
+                            <option class="drop"value="Ecuador">Ecuador</option>
+                            <option class="drop"value="Egypt">Egypt</option>
+                            <option class="drop"value="El Salvador">El Salvador</option>
+                            <option class="drop"value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option class="drop"value="Eritrea">Eritrea</option>
+                            <option class="drop"value="Estonia">Estonia</option>
+                            <option class="drop"value="Ethiopia">Ethiopia</option>
+                            <option class="drop"value="Falkland Islands">Falkland Islands (Malvinas)</option>
+                            <option class="drop"value="Faroe Islands">Faroe Islands</option>
+                            <option class="drop"value="Fiji">Fiji</option>
+                            <option class="drop"value="Finland">Finland</option>
+                            <option class="drop"value="France">France</option>
+                            <option class="drop"value="France Metropolitan">France, Metropolitan</option>
+                            <option class="drop"value="French Guiana">French Guiana</option>
+                            <option class="drop"value="French Polynesia">French Polynesia</option>
+                            <option class="drop"value="French Southern Territories">French Southern Territories</option>
+                            <option class="drop"value="Gabon">Gabon</option>
+                            <option class="drop"value="Gambia">Gambia</option>
+                            <option class="drop"value="Georgia">Georgia</option>
+                            <option class="drop"value="Germany">Germany</option>
+                            <option class="drop"value="Ghana">Ghana</option>
+                            <option class="drop"value="Gibraltar">Gibraltar</option>
+                            <option class="drop"value="Greece">Greece</option>
+                            <option class="drop"value="Greenland">Greenland</option>
+                            <option class="drop"value="Grenada">Grenada</option>
+                            <option class="drop"value="Guadeloupe">Guadeloupe</option>
+                            <option class="drop"value="Guam">Guam</option>
+                            <option class="drop"value="Guatemala">Guatemala</option>
+                            <option class="drop"value="Guinea">Guinea</option>
+                            <option class="drop"value="Guinea-Bissau">Guinea-Bissau</option>
+                            <option class="drop"value="Guyana">Guyana</option>
+                            <option class="drop"value="Haiti">Haiti</option>
+                            <option class="drop"value="Heard and McDonald Islands">Heard and Mc Donald Islands</option>
+                            <option class="drop"value="Holy See">Holy See (Vatican City State)</option>
+                            <option class="drop"value="Honduras">Honduras</option>
+                            <option class="drop"value="Hong Kong">Hong Kong</option>
+                            <option class="drop"value="Hungary">Hungary</option>
+                            <option class="drop"value="Iceland">Iceland</option>
+                            <option class="drop"value="India">India</option>
+                            <option class="drop"value="Indonesia">Indonesia</option>
+                            <option class="drop"value="Iran">Iran (Islamic Republic of)</option>
+                            <option class="drop"value="Iraq">Iraq</option>
+                            <option class="drop"value="Ireland">Ireland</option>
+                            <option class="drop"value="Israel">Israel</option>
+                            <option class="drop"value="Italy">Italy</option>
+                            <option class="drop"value="Jamaica">Jamaica</option>
+                            <option class="drop"value="Japan">Japan</option>
+                            <option class="drop"value="Jordan">Jordan</option>
+                            <option class="drop"value="Kazakhstan">Kazakhstan</option>
+                            <option class="drop"value="Kenya">Kenya</option>
+                            <option class="drop"value="Kiribati">Kiribati</option>
+                            <option class="drop"value="Democratic People's Republic of Korea">Korea, Democratic People's Republic of</option>
+                            <option class="drop"value="Korea">Korea, Republic of</option>
+                            <option class="drop"value="Kuwait">Kuwait</option>
+                            <option class="drop"value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option class="drop"value="Lao">Lao People's Democratic Republic</option>
+                            <option class="drop"value="Latvia">Latvia</option>
+                            <option class="drop"value="Lebanon">Lebanon</option>
+                            <option class="drop"value="Lesotho">Lesotho</option>
+                            <option class="drop"value="Liberia">Liberia</option>
+                            <option class="drop"value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                            <option class="drop"value="Liechtenstein">Liechtenstein</option>
+                            <option class="drop"value="Lithuania">Lithuania</option>
+                            <option class="drop"value="Luxembourg">Luxembourg</option>
+                            <option class="drop"value="Macau">Macau</option>
+                            <option class="drop"value="Macedonia">Macedonia, The Former Yugoslav Republic of</option>
+                            <option class="drop"value="Madagascar">Madagascar</option>
+                            <option class="drop"value="Malawi">Malawi</option>
+                            <option class="drop"value="Malaysia">Malaysia</option>
+                            <option class="drop"value="Maldives">Maldives</option>
+                            <option class="drop"value="Mali">Mali</option>
+                            <option class="drop"value="Malta">Malta</option>
+                            <option class="drop"value="Marshall Islands">Marshall Islands</option>
+                            <option class="drop"value="Martinique">Martinique</option>
+                            <option class="drop"value="Mauritania">Mauritania</option>
+                            <option class="drop"value="Mauritius">Mauritius</option>
+                            <option class="drop"value="Mayotte">Mayotte</option>
+                            <option class="drop"value="Mexico">Mexico</option>
+                            <option class="drop"value="Micronesia">Micronesia, Federated States of</option>
+                            <option class="drop"value="Moldova">Moldova, Republic of</option>
+                            <option class="drop"value="Monaco">Monaco</option>
+                            <option class="drop"value="Mongolia">Mongolia</option>
+                            <option class="drop"value="Montserrat">Montserrat</option>
+                            <option class="drop"value="Morocco">Morocco</option>
+                            <option class="drop"value="Mozambique">Mozambique</option>
+                            <option class="drop"value="Myanmar">Myanmar</option>
+                            <option class="drop"value="Namibia">Namibia</option>
+                            <option class="drop"value="Nauru">Nauru</option>
+                            <option class="drop"value="Nepal">Nepal</option>
+                            <option class="drop"value="Netherlands">Netherlands</option>
+                            <option class="drop"value="Netherlands Antilles">Netherlands Antilles</option>
+                            <option class="drop"value="New Caledonia">New Caledonia</option>
+                            <option class="drop"value="New Zealand">New Zealand</option>
+                            <option class="drop"value="Nicaragua">Nicaragua</option>
+                            <option class="drop"value="Niger">Niger</option>
+                            <option class="drop"value="Nigeria">Nigeria</option>
+                            <option class="drop"value="Niue">Niue</option>
+                            <option class="drop"value="Norfolk Island">Norfolk Island</option>
+                            <option class="drop"value="Northern Mariana Islands">Northern Mariana Islands</option>
+                            <option class="drop"value="Norway">Norway</option>
+                            <option class="drop"value="Oman">Oman</option>
+                            <option class="drop"value="Pakistan">Pakistan</option>
+                            <option class="drop"value="Palau">Palau</option>
+                            <option class="drop"value="Panama">Panama</option>
+                            <option class="drop"value="Papua New Guinea">Papua New Guinea</option>
+                            <option class="drop"value="Paraguay">Paraguay</option>
+                            <option class="drop"value="Peru">Peru</option>
+                            <option class="drop"value="Philippines">Philippines</option>
+                            <option class="drop"value="Pitcairn">Pitcairn</option>
+                            <option class="drop"value="Poland">Poland</option>
+                            <option class="drop"value="Portugal">Portugal</option>
+                            <option class="drop"value="Puerto Rico">Puerto Rico</option>
+                            <option class="drop"value="Qatar">Qatar</option>
+                            <option class="drop"value="Reunion">Reunion</option>
+                            <option class="drop"value="Romania">Romania</option>
+                            <option class="drop"value="Russia">Russian Federation</option>
+                            <option class="drop"value="Rwanda">Rwanda</option>
+                            <option class="drop"value="Saint Kitts and Nevis">Saint Kitts and Nevis</option> 
+                            <option class="drop"value="Saint LUCIA">Saint LUCIA</option>
+                            <option class="drop"value="Saint Vincent">Saint Vincent and the Grenadines</option>
+                            <option class="drop"value="Samoa">Samoa</option>
+                            <option class="drop"value="San Marino">San Marino</option>
+                            <option class="drop"value="Sao Tome and Principe">Sao Tome and Principe</option> 
+                            <option class="drop"value="Saudi Arabia">Saudi Arabia</option>
+                            <option class="drop"value="Senegal">Senegal</option>
+                            <option class="drop"value="Seychelles">Seychelles</option>
+                            <option class="drop"value="Sierra">Sierra Leone</option>
+                            <option class="drop"value="Singapore">Singapore</option>
+                            <option class="drop"value="Slovakia">Slovakia (Slovak Republic)</option>
+                            <option class="drop"value="Slovenia">Slovenia</option>
+                            <option class="drop"value="Solomon Islands">Solomon Islands</option>
+                            <option class="drop"value="Somalia">Somalia</option>
+                            <option class="drop"value="South Africa">South Africa</option>
+                            <option class="drop"value="South Georgia">South Georgia and the South Sandwich Islands</option>
+                            <option class="drop"value="Span">Spain</option>
+                            <option class="drop"value="SriLanka">Sri Lanka</option>
+                            <option class="drop"value="St. Helena">St. Helena</option>
+                            <option class="drop"value="St. Pierre and Miguelon">St. Pierre and Miquelon</option>
+                            <option class="drop"value="Sudan">Sudan</option>
+                            <option class="drop"value="Suriname">Suriname</option>
+                            <option class="drop"value="Svalbard">Svalbard and Jan Mayen Islands</option>
+                            <option class="drop"value="Swaziland">Swaziland</option>
+                            <option class="drop"value="Sweden">Sweden</option>
+                            <option class="drop"value="Switzerland">Switzerland</option>
+                            <option class="drop"value="Syria">Syrian Arab Republic</option>
+                            <option class="drop"value="Taiwan">Taiwan, Province of China</option>
+                            <option class="drop"value="Tajikistan">Tajikistan</option>
+                            <option class="drop"value="Tanzania">Tanzania, United Republic of</option>
+                            <option class="drop"value="Thailand">Thailand</option>
+                            <option class="drop"value="Togo">Togo</option>
+                            <option class="drop"value="Tokelau">Tokelau</option>
+                            <option class="drop"value="Tonga">Tonga</option>
+                            <option class="drop"value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option class="drop"value="Tunisia">Tunisia</option>
+                            <option class="drop"value="Turkey">Turkey</option>
+                            <option class="drop"value="Turkmenistan">Turkmenistan</option>
+                            <option class="drop"value="Turks and Caicos">Turks and Caicos Islands</option>
+                            <option class="drop"value="Tuvalu">Tuvalu</option>
+                            <option class="drop"value="Uganda">Uganda</option>
+                            <option class="drop"value="Ukraine">Ukraine</option>
+                            <option class="drop"value="United Arab Emirates">United Arab Emirates</option>
+                            <option class="drop"value="United Kingdom">United Kingdom</option>
+                            <option class="drop"value="United States">United States</option>
+                            <option class="drop"value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                            <option class="drop"value="Uruguay">Uruguay</option>
+                            <option class="drop"value="Uzbekistan">Uzbekistan</option>
+                            <option class="drop"value="Vanuatu">Vanuatu</option>
+                            <option class="drop"value="Venezuela">Venezuela</option>
+                            <option class="drop"value="Vietnam">Viet Nam</option>
+                            <option class="drop"value="Virgin Islands (British)">Virgin Islands (British)</option>
+                            <option class="drop"value="Virgin Islands (U.S)">Virgin Islands (U.S.)</option>
+                            <option class="drop"value="Wallis and Futana Islands">Wallis and Futuna Islands</option>
+                            <option class="drop"value="Western Sahara">Western Sahara</option>
+                            <option class="drop"value="Yemen">Yemen</option>
+                            <option class="drop"value="Serbia">Serbia</option>
+                            <option class="drop"value="Zambia">Zambia</option>
+                            <option class="drop"value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                </div>
+                <div class="col-lg-12">
+                    <button class="btn btn-success">Signup</button>
+                </div>
+                
+        </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./script/signup.js"></script>
+</body>
+</html>
